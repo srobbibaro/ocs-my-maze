@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadeScrollbars="false" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewMazeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/make_maze_name_label"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextMazeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="128"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewCreatedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/make_maze_created_by_label"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextCreatedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="128"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewMazeSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/make_maze_size_label"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupMazeSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButtonMazeSizeSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:checked="true"
+                android:text="@string/make_maze_size_small" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMazeSizeMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:text="@string/make_maze_size_medium" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMazeSizeLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:text="@string/make_maze_size_large" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewMazeSizeInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/make_maze_size_medium_info"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutHr"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#AAAAAAAA" />
+
+        <LinearLayout
+            android:id="@+id/hLinearLayoutButtons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="@string/make_maze_regenerate_maze"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/make_maze_regenerate_maze_edit_questions"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/make_maze_cancel"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

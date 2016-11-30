@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/questionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".50"
+        android:fadeScrollbars="false" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="256dp"
+                android:layout_height="256dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="30dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/answerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".40"
+        android:fadeScrollbars="false" >
+
+        <RadioGroup
+            android:id="@+id/radioGroupAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radioButtonAnswerA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAnswerB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAnswerC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAnswerD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/hLinearLayoutButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".10" >
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/question_mode_submit"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/buttonLeave"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/question_mode_leave"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
