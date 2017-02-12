@@ -15,7 +15,7 @@
     <string name="main_menu_import">Import a Maze File</string>
     <string name="main_menu_label">What would you like to do?</string>
     <string name="main_menu_quit">Quit</string>
-    <string name="main_menu_copyright">© 2013 - 2016 Original Content Software</string>
+    <string name="main_menu_copyright">© 2013 - 2017 Original Content Software</string>
     <string name="my_maze_menu_label">What would you like to do?</string>
     <string name="my_maze_menu_edit">Edit My Maze</string>
     <string name="my_maze_menu_load">Play My Maze</string>
