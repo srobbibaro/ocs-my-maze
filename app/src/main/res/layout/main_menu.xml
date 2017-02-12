@@ -18,7 +18,7 @@
             android:textSize="35sp" />
 
         <TextView
-            android:id="@+id/textViewNotice"
+            android:id="@+id/textViewCopyright"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/main_menu_copyright"
