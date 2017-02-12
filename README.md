@@ -1,22 +1,46 @@
 myMAZE
 ======
 
-myMAZE is an Android game developed by Original Content Software, starting in fall 2012.
+myMAZE is an Android game designed for users to create and share personalized mazes with friends.
 
 ## Getting Started
 
 Follow Android development setup instructions here: http://developer.android.com/sdk/installing/index.html?pkg=tools
 
-To compile debug version: `$ ant debug`
+### Configuration
 
-To deploy to Android device: `$ adb install -r bin/MyMaze-debug.apk`
+We do not store secret keys in the source code. They should
+be specified in `.../res/values/configuration.xml`. The application will not run
+properly without these values set. Here's an example:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="bugsnag_api_key">mybugsnagapikey</string>
+</resources>
+```
+
+This file is specified in the `.gitignore` file and should not be submitted to
+the remote repository.
+
+### Debug Build
+
+To compile debug version: `$ ./gradlew assembleDebug`
+
+To deploy to Android device: `$ ./gradlew installDebug`
+
+Optionally AndroidStudio can be used for these operations.
+
+For information, see: https://developer.android.com/studio/run/index.html
 
 ### Release Build
 
 In order to properly build a release, you will need the appropriate keystore file
 (not in source control), and the password.
 
-Run: `$ tools/build_release.sh`
+Run: `$ ./gradlew assembleRelease`
+
+Optionally AndroidStudio can be used for this operation.
 
 ### Logging/Debug
 
