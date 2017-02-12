@@ -1,7 +1,9 @@
 #! /usr/bin/env bash
 
-ant clean
-ant release
+export JAVA_HOME=/opt/android-studio/jre/
+
+./gradlew clean
+./gradlew assembleRelease
 
 sudo jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore original-content-software.keystore bin/MyMaze-release-unsigned.apk original_content_software || { echo 'Error! Could not sign jar file.'; exit 1; }
 ~/android/android-sdk-linux/build-tools/21.1.2/zipalign -v 4 bin/MyMaze-release-unsigned.apk bin/MyMaze.apk
