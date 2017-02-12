@@ -74,8 +74,7 @@ public class GraphicsUtil {
     this.gl = gl;
   }
 
-  public void drawPlayer(float x, float z, Vector direction)
-  {
+  public void drawPlayer(float x, float z, Vector direction) {
     gl.glPushMatrix();
 
     if (direction.x > 0) {
@@ -119,8 +118,7 @@ public class GraphicsUtil {
     gl.glPopMatrix();
   }
 
-  public void drawGround(float x, float z, boolean isVisited, Vector direction)
-  {
+  public void drawGround(float x, float z, boolean isVisited, Vector direction) {
     gl.glPushMatrix();
     gl.glTranslatef(x * 10.0f, -10.0f, z * 10.0f);
     gl.glScalef(10.0f, 10.0f, 10.0f);

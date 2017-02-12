@@ -1,13 +1,8 @@
 package com.originalcontentsoftware.lfb;
 
 import android.util.Log;
-//#include <math.h>
-//#include <stdio.h>
 
-
-
-public class Matrix
-{
+public class Matrix {
   public float data[] = new float[16];      // 4 x 4
 
   Matrix() {
