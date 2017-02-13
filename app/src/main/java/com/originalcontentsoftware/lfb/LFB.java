@@ -104,7 +104,6 @@ public class LFB extends Activity implements SurfaceHolder.Callback, QuestionAns
     menu.add(1,3,0, "Toggle Aerial Control");
     menu.add(1,5,0,getResources().getString(R.string.menu_restart));
     menu.add(1,7,0,getResources().getString(R.string.menu_quit));
-    //menu.add(1,8,0,"Enable GPS");
     menu.add(1,12,0,"New Empty Maze");
     menu.add(1,13,0,"New Generated Maze");
     menu.add(1,14,0,"Save Maze to File");
@@ -159,10 +158,6 @@ public class LFB extends Activity implements SurfaceHolder.Callback, QuestionAns
       return true;
     case 7:
       handleCancel();
-      break;
-    case 8:
-      // TODO: GPS Stuff
-      //getLocation();
       break;
     }
     return super.onOptionsItemSelected(item);

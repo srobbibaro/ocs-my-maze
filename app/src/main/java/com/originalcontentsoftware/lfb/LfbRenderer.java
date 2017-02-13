@@ -822,11 +822,6 @@ public class LfbRenderer implements Renderer {
     textPaint.setTextSize(10);
     canvas.drawText("Plr x=" + player.position.x, 16,60, textPaint);
     canvas.drawText("Plr z=" + player.position.z, 16,75, textPaint);
-    // TODO: Figure out what to do with GPS Gates...
-    //canvas.drawText("Curr Lon=" + lastLon, 16,100, textPaint);
-    //canvas.drawText("Curr Lat=" + lastLat, 16,120, textPaint);
-    //canvas.drawText("Gate Lon=" + gateLon, 16,140, textPaint);
-    //canvas.drawText("Gate Lat=" + gateLat, 16,160, textPaint);
     canvas.drawText("fps=" + fps, 16,90, textPaint);
     canvas.drawText("Time=" + totalTime, 16,105, textPaint);
     canvas.drawText("Mode=" + currentMode, 16,120, textPaint);

@@ -998,20 +998,6 @@ public class Maze {
     this.mazeName = mazeName;
   }
 
-  public void checkGpsGates(double lon, double lat) {
-    lastLon = lon;
-    lastLat = lat;
-    if (lon < (gateLon + .0005) && lon > (gateLon - .0005)  && lat > (gateLat - .0005) && lat < (gateLat + .0005)) {
-      for (int i = 0; i < length; i++) {
-        for (int u = 0; u < length; u++) {
-          if (maze[i][u] == 7 || maze[i][u] == 8) {
-            maze[i][u] = 0;
-          }
-        }
-      }
-    }
-  }
-
   public boolean isPositionInBounds(int x, int z) {
     return x >= 0 && x < width && z >= 0 && z < length;
   }
