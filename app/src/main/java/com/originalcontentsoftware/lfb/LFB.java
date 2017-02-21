@@ -121,8 +121,6 @@ public class LFB extends Activity implements SurfaceHolder.Callback, QuestionAns
     saveMaze.setVisible(DebugInformation.isDebugEnabled);
     MenuItem mathQuestions = menu.findItem(15);
     mathQuestions.setVisible(DebugInformation.isDebugEnabled);
-    MenuItem presidentsQuestions = menu.findItem(16);
-    presidentsQuestions.setVisible(DebugInformation.isDebugEnabled);
     MenuItem saveMazeInternal = menu.findItem(17);
     saveMazeInternal.setVisible(DebugInformation.isDebugEnabled);
   }
@@ -143,9 +141,6 @@ public class LFB extends Activity implements SurfaceHolder.Callback, QuestionAns
       return true;
     case 15:
       renderer.generateMathDemoMaze();
-      return true;
-    case 16:
-      renderer.generatePresidentsDemoMaze();
       return true;
     case 17:
       renderer.saveMazeInternal();
@@ -398,8 +393,6 @@ public class LFB extends Activity implements SurfaceHolder.Callback, QuestionAns
       saveMaze.setVisible(DebugInformation.isDebugEnabled);
       MenuItem mathQuestions = menu.findItem(15);
       mathQuestions.setVisible(DebugInformation.isDebugEnabled);
-      MenuItem presidentsQuestions = menu.findItem(16);
-      presidentsQuestions.setVisible(DebugInformation.isDebugEnabled);
       MenuItem saveMazeInternal = menu.findItem(17);
       saveMazeInternal.setVisible(DebugInformation.isDebugEnabled);
     }

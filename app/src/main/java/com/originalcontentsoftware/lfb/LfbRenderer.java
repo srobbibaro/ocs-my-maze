@@ -877,20 +877,6 @@ public class LfbRenderer implements Renderer {
     maze.exportMazeExternal("demo_maze1.ocsmaze", context);
   }
 
-  public void generatePresidentsDemoMaze() {
-    player.resetValues();
-    totalTime = 0.0f;
-    lastMoveTime = 0.0f;
-    mazeFile = "";
-    location = "resource";
-    maze = new Maze(graphicsUtil);
-    maze.addUsPresidentsQuestions();
-    maze.generateMaze(21, 21);
-    maze.setMazeName("Demo Maze #2");
-    restart();
-    maze.exportMazeExternal("demo_maze2.ocsmaze", context);
-  }
-
   public void generateEmptyMaze() {
     player.resetValues();
     totalTime = 0.0f;

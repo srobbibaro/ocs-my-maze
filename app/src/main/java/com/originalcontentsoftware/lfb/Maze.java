@@ -1178,21 +1178,4 @@ public class Maze {
     questionGates.add( new MazeQuestionGate("100 + 5 = ?", new String[] {"5", "105", "500", "250"}, 1, 3));
     questionGates.add( new MazeQuestionGate("100 - 5 = ?", new String[] {"95", "100", "500", "250"}, 0, 3));
   }
-
-  public void addUsPresidentsQuestions() {
-    clearQuestions();
-    questionGates.add( new MazeQuestionGate("First President of USA?", new String[] {"George Washington", "George Washington Carver", "Thomas Jefferson", "Benjamin Franklin"}, 0, 3));
-    questionGates.add( new MazeQuestionGate("Second President of USA?", new String[] {"George Washington", "John Adams", "Thomas Jefferson", "James Monroe"}, 1, 2));
-    questionGates.add( new MazeQuestionGate("Fourth President of USA?", new String[] {"George Washington", "James Madison", "Thomas Jefferson", "James Monroe"}, 1, 0));
-    questionGates.add( new MazeQuestionGate("38th President of USA?", new String[] {"Gerald Rudolph Ford", "Zachary Taylor", "Martin Van Buren", "William Howard Taft"}, 0, 1));
-    questionGates.add( new MazeQuestionGate("Fifth President of USA?", new String[] {"George Washington", "Gerald Rudolph Ford", "Thomas Jefferson", "James Monroe"}, 3, 3));
-    questionGates.add( new MazeQuestionGate("Tenth President of USA?", new String[] {"John Tyler", "James Monroe", "Thomas Jefferson", "Benjamin Franklin"}, 0, 2));
-    questionGates.add( new MazeQuestionGate("20th President of USA?", new String[] {"William McKinley", "James Abram Garfield", "Gerald Rudolph Ford", "John Tyler"}, 1, 0));
-    questionGates.add( new MazeQuestionGate("25th President of USA?", new String[] {"George Washington", "Ronald Wilson Reagan", "Thomas Jefferson", "William McKinley"}, 3, 2));
-    questionGates.add( new MazeQuestionGate("Third President of USA?", new String[] {"Thomas Jefferson", "Harry S. Truman", "Gerald Rudolph Ford", "Benjamin Franklin"}, 0, 1));
-    questionGates.add( new MazeQuestionGate("30th President of USA?", new String[] {"George Washington", "William Jefferson Clinton", "(John) Calvin Coolidge", "Benjamin Franklin"}, 2, 1));
-    questionGates.add( new MazeQuestionGate("31st President of USA?", new String[] {"Ronald Wilson Reagan", "Gerald Rudolph Ford", "Dwight David Eisenhower", "(John) Calvin Coolidge"}, 0, 3));
-    questionGates.add( new MazeQuestionGate("40th President of USA?", new String[] {"Ronald Wilson Reagan", "(John) Calvin Coolidge", "William Jefferson Clinton", "(Stephen) Grover Cleveland"}, 0, 3));
-
-  }
 }
