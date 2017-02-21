@@ -93,12 +93,6 @@ public class Maze {
     return 0;
   }
 
-  private double gateLat = 40.4299;
-  private double gateLon = -79.7951;
-
-  private double lastLon = 0.0;
-  private double lastLat = 0.0;
-
   final private Random random = new Random();
 
   public String getCreatedBy() {
