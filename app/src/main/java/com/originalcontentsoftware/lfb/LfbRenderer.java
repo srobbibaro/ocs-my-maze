@@ -863,20 +863,6 @@ public class LfbRenderer implements Renderer {
     restart();
   }
 
-  public void generateMathDemoMaze() {
-    player.resetValues();
-    totalTime = 0.0f;
-    lastMoveTime = 0.0f;
-    mazeFile = "";
-    location = "resource";
-    maze = new Maze(graphicsUtil);
-    maze.addMathQuestions();
-    maze.generateMaze(21, 21);
-    maze.setMazeName("Demo Maze #1");
-    restart();
-    maze.exportMazeExternal("demo_maze1.ocsmaze", context);
-  }
-
   public void generateEmptyMaze() {
     player.resetValues();
     totalTime = 0.0f;
@@ -967,12 +953,6 @@ public class LfbRenderer implements Renderer {
     if (maze != null) {
       maze.resetMaze();
       maze.exportMazeInternal("new_maze.ocsmaze", context);
-    }
-  }
-
-  public void addMathQuestions() {
-    if (maze != null) {
-      maze.addMathQuestions();
     }
   }
 

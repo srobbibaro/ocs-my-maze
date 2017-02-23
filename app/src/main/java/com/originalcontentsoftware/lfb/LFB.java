@@ -107,7 +107,6 @@ public class LFB extends Activity implements SurfaceHolder.Callback, QuestionAns
     menu.add(1,12,0,"New Empty Maze");
     menu.add(1,13,0,"New Generated Maze");
     menu.add(1,14,0,"Save Maze to File");
-    menu.add(1,15,0,"Generate Math Demo Maze");
     menu.add(1,17,0,"Save maze as internal");
 
     MenuItem toggleAerial = menu.findItem(3);
@@ -118,8 +117,6 @@ public class LFB extends Activity implements SurfaceHolder.Callback, QuestionAns
     generateMaze.setVisible(DebugInformation.isDebugEnabled);
     MenuItem saveMaze = menu.findItem(14);
     saveMaze.setVisible(DebugInformation.isDebugEnabled);
-    MenuItem mathQuestions = menu.findItem(15);
-    mathQuestions.setVisible(DebugInformation.isDebugEnabled);
     MenuItem saveMazeInternal = menu.findItem(17);
     saveMazeInternal.setVisible(DebugInformation.isDebugEnabled);
   }
@@ -137,9 +134,6 @@ public class LFB extends Activity implements SurfaceHolder.Callback, QuestionAns
       return true;
     case 14:
       renderer.saveMaze();
-      return true;
-    case 15:
-      renderer.generateMathDemoMaze();
       return true;
     case 17:
       renderer.saveMazeInternal();
@@ -390,8 +384,6 @@ public class LFB extends Activity implements SurfaceHolder.Callback, QuestionAns
       generateMaze.setVisible(DebugInformation.isDebugEnabled);
       MenuItem saveMaze = menu.findItem(14);
       saveMaze.setVisible(DebugInformation.isDebugEnabled);
-      MenuItem mathQuestions = menu.findItem(15);
-      mathQuestions.setVisible(DebugInformation.isDebugEnabled);
       MenuItem saveMazeInternal = menu.findItem(17);
       saveMazeInternal.setVisible(DebugInformation.isDebugEnabled);
     }
