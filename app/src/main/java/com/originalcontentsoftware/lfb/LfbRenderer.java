@@ -940,22 +940,6 @@ public class LfbRenderer implements Renderer {
     totalTime = 0.0f;
   }
 
-  public void saveMaze() {
-    restart();
-    if (maze != null) {
-      maze.resetMaze();
-      maze.exportMazeExternal("saved_maze.ocsmaze", context);
-    }
-  }
-
-  public void saveMazeInternal() {
-    restart();
-    if (maze != null) {
-      maze.resetMaze();
-      maze.exportMazeInternal("new_maze.ocsmaze", context);
-    }
-  }
-
   public void determineForwardMove(int buttonNumber) {
     Vector nextPosition = new Vector(directions[player.direction].x, 0.0f, directions[player.direction].z);
     int nextX = (int)((player.position.x + (nextPosition.x)));
