@@ -22,9 +22,6 @@
               android:label="@string/title_activity_main"
               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
 
-    <activity android:name=".SelectMazeActivity"
-              android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-
     <activity android:name=".QuestionActivity"
               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
 

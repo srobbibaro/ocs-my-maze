@@ -51,17 +51,6 @@ public class MainMenuActivity extends Activity {
       }
     });
 
-
-    /*
-    final Button button6 = (Button) findViewById(R.id.button6);
-    button6.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        handleClick(v, "Import");
-      }
-    });
-     */
-
     final Button button8 = (Button) findViewById(R.id.button8);
     button8.setOnClickListener(new View.OnClickListener() {
       @Override
@@ -132,17 +121,6 @@ public class MainMenuActivity extends Activity {
       Intent myIntent = new Intent(this.getApplicationContext(), MyMazeMenu.class);
       myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
       startActivityForResult(myIntent, 6);
-    }
-    else if (button.equals("Import")) {
-      Intent myIntent = new Intent(this.getApplicationContext(), SelectMazeActivity.class);
-      myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-      startActivityForResult(myIntent, 0);
-      /*
-      Intent intent = new Intent(android.content.Intent.ACTION_GET_CONTENT);
-      intent.setType("file/*");
-       startActivityForResult(Intent.createChooser(intent,
-                     "Select Maze File"), 10);
-       */
     }
     else if (button.equals("Leave")) {
       //handleCancel();
