@@ -108,7 +108,6 @@ public class LFB extends Activity implements SurfaceHolder.Callback, QuestionAns
     menu.add(1,13,0,"New Generated Maze");
     menu.add(1,14,0,"Save Maze to File");
     menu.add(1,15,0,"Generate Math Demo Maze");
-    menu.add(1,16,0,"Generate Presidents Demo Maze");
     menu.add(1,17,0,"Save maze as internal");
 
     MenuItem toggleAerial = menu.findItem(3);
