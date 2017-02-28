@@ -19,5 +19,7 @@ android {
 
     dependencies {
         compile 'com.bugsnag:bugsnag-android:3.8.0'
+        compile group: 'commons-io', name: 'commons-io', version: '2.5'
+        compile group: 'org.apache.commons', name: 'commons-compress', version: '1.13'
     }
 }
